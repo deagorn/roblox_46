@@ -5,7 +5,9 @@
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
 }
-
+.main-content:has(.lock-overlay) {
+  overflow: hidden; /* <--- САМЕ ЦЕ ВИМИКАЄ ПРОКРУТКУ */
+}
 body {
   background-color: #1e1e24; /* Темний фон під Roblox Studio */
   color: #ffffff;
